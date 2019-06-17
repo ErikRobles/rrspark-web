@@ -6,7 +6,7 @@ import Nav from '../components/Nav';
 class Servicios extends Component {
     render() {
         return (
-            <div>
+            <div className="wrapper">
                 <Nav />
             <h1>Servicios page</h1>
             </div>

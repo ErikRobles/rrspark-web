@@ -94,9 +94,10 @@ h3 {
 }
 
 .sidebar-content p {
-    font-size: 18px;
+    font-size: 16px;
     padding-left: 15px;
     color: #341b39;
+    margin-top: 0;
 }
 
 .sidebar-content ul {
@@ -110,6 +111,7 @@ h3 {
 
 .sidenav {
     height: 100%;
+    max-height: 100vh!important;
     width: 0;
     position: absolute;
     z-index: 1;
@@ -118,20 +120,20 @@ h3 {
     background-color: #fff;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    /* padding-top: 20px; */
   }
   
 .sidenav a {
     padding: 5px 5px 5px 85px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     color: #341b39;
     display: block;
     transition: 0.3s;
 }
 
 .big-cap {
-      font-size: 28px;
+      font-size: 26px;
 }
   
 .sidenav a:hover {
@@ -165,7 +167,7 @@ span .button-area {
 
 .sidenav .closebtn {
     position: absolute;
-    top: 35px;
+    top: 5px;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
@@ -243,13 +245,13 @@ a.button-text-1:hover {
 }
 
 .menu-wrapper {
-    padding-bottom: 25px;
+    padding-bottom: 17px;
 }
 
 .wrapper {
     width: 80%;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 25px;
 }
 
 a.aviso {

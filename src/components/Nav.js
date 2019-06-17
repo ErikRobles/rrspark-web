@@ -31,12 +31,6 @@ class Nav extends Component {
                                 <NavLink exact to="/Aviso" activeClassName="active" className="aviso a-link-2">Aviso de Privacidad</NavLink>
                                 <p className="copy">&copy;2019 RRspark</p>
                         </div>
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
                     </div>
                     <div className="colored-side">
                         <div className="link-holder">
