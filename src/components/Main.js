@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
 import '../App.css';
 import LogoImage from '../assets/img/LogoRRspark-Trans.png';
+import counterpart from 'counterpart';
+import Translate from 'react-translate-component';
+import en from '../lang/en';
+import es from '../lang/es';
+
+
+counterpart.registerTranslations('en', en);
+counterpart.registerTranslations('es', es);
+counterpart.setLocale('es');
+
 
 class Main extends Component {
     render() {
@@ -10,15 +20,15 @@ class Main extends Component {
             <div className="item-wrapper">
             <div className="image-holder">
                 <img className="logo-image" src={LogoImage} alt="Logo" />
-                <h1 className="uppercase">Let our spark ignite your vision</h1>
+                <Translate content="slogan" component="h1" className="uppercase" />
             </div>
             </div>
             </div>
             <div className="item2">
                 <div className="item-wrapper-2">
-                    <h3 className="promo-header">Your web and app<br /> heavy lifters</h3>
+                    <Translate content="message1" component="h3" className="promo-header" unsafe={true} />
                     <div className="center-obj">
-                        <a href="/Work" className="button-box button-text-1">Check out how we work</a>
+                        <Translate content="message1Link" component="a" className="button-box button-text-1" href="#/Work" />
                     </div>
                 </div>
             </div>
@@ -26,26 +36,26 @@ class Main extends Component {
                 <div className="item-wrapper-3">
                     <div id="show-hide">
                     <div id="outer" className="outer">
-                        <h1 className="services">SERVICIOS</h1>
+                        <Translate content="services" component="h1" className="services" />
                     </div>
                     <div id="inner">    
                     <div className="services-menu">
                         <ul className="list-items">
                             <li className="service-links">
-                                <a href="http://rrspark.com" style={{position: 'relative', zIndex: 50}}>Sitio Web</a>
+                                <Translate content="sitioLink" component="a" style={{position: 'relative', zIndex: 50}} href="#/Web" />
                             </li>
                             <li className="service-links">
-                                <a href="http://rrspark.com" style={{position: 'relative',zIndex: 50}}>E-Commerce</a>
+                                <Translate content="EcommerceLink" component="a" style={{position: 'relative', zIndex: 50}} href="#/Ecommerce" />
                             </li>
                             <li className="service-links">
-                                <a href="http://rrspark.com">Contenido Web</a>
+                                <Translate content="contenidoLink" component="a" style={{position: 'relative', zIndex: 50}} href="#/Contenido" />
                             </li>
                         </ul>
                     </div>
                     </div>
                 </div>
                 </div>
-            </div>
+            </div> 
             <div className="item4">
                 <div className="container">
                     <div className="row">
@@ -57,7 +67,7 @@ class Main extends Component {
                         <div className="col">
                             <div className="room-to-breathe">
                                 <div className="social">
-                                <a href="/Contacto" className="footer-contact-button">CONTACTO</a>
+                                <Translate content="contactLink" component="a" className="footer-contact-button" href="#/Contacto" />    
                             </div>
                                 <a href="#"><i className="fab fa-linkedin-in"></i></a>        
                                 <a href="#"><i className="fab fa-instagram"></i></a>

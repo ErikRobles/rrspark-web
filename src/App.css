@@ -369,12 +369,12 @@ p.copy {
 }
 
 .footer-text:first-child {
-    padding-bottom: 20px;
+    padding-bottom: 20px!important;
 }
 
 a.footer-contact-button {
       border: 1px solid #d7d7d7;
-      padding: 8px 25px;
+      padding: 8px 30px!important;
       text-decoration: none;
       color: #d7d7d7;
       transition: ease-in-out .5s;
@@ -386,7 +386,7 @@ a.footer-contact-button:hover {
 }
 
 .room-to-breathe {
-      margin-top: 35px;
+      margin-top: 30px!important;
       text-align: center;
 }
 
@@ -416,6 +416,7 @@ a.footer-contact-button:hover {
 
 .social {
     position: relative;
+    min-width: 140px!important;
 }
 
 .fab {
@@ -776,7 +777,7 @@ a.footer-contact-button:hover {
 
 @media only screen and (max-width: 1145px) {
     .standard-info .footer-text:first-child {
-        padding-bottom: 30px;
+        padding-bottom: 30px!important;
     }
 }
 
@@ -791,8 +792,8 @@ a.footer-contact-button:hover {
         width: 40%;
     }  
     .standard-info .footer-text:first-child {
-        padding-bottom: 25px;
-        padding-top: 5px;
+        padding-bottom: 25px!important;
+        padding-top: 5px!important;
     }
 }
 

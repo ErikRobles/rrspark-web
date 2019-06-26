@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import '../App.css';
 import { NavLink } from 'react-router-dom';
+import counterpart from 'counterpart';
+import Translate from 'react-translate-component';
+import en from '../lang/en';
+import es from '../lang/es';
+
+counterpart.registerTranslations('en', en);
+counterpart.registerTranslations('es', es);
+counterpart.setLocale('es');
 
 
 class Nav extends Component {
@@ -10,12 +18,27 @@ class Nav extends Component {
      closeNav() {
        document.getElementById("mySidenav").style.width = "0";
     }
+
+constructor(props) {
+    super(props);
+    this.onLangChange = this.onLangChange.bind(this);
+}
+    state = {
+        lang: 'es'
+    }
+
+    onLangChange = (lang) => {
+        this.setState({lang});
+        counterpart.setLocale(lang);
+    }
+
     render() {
+        
         return (
                 <div id="mySidenav" className="sidenav">
                     <div className="menu-wrapper">
                         <a href="javascript:void(0)" className="closebtn" style={{cursor: "pointer"}} onClick={() => this.closeNav()}>&times;</a>
-                        <NavLink exact to="/" activeClassName="active a-link">- <span className="big-cap">H</span>OME</NavLink>
+                        <NavLink exact to="/" activeClassName="active a-link">- <span className="big-cap">I</span>NICIO</NavLink>
                         <NavLink exact to="/Portfolio" activeClassName="active a-link">- <span className="big-cap">P</span>ORTFOLIO</NavLink>
                         <NavLink exact to="/Work" activeClassName="active a-link">- <span className="big-cap">H</span>OW <span className="big-cap">W</span>E <span className="big-cap">W</span>ORK</NavLink>
                         <NavLink exact to="/Servicios" activeClassName="active a-link">- <span className="big-cap">S</span>ERVICIOS</NavLink>
@@ -34,8 +57,8 @@ class Nav extends Component {
                     </div>
                     <div className="colored-side">
                         <div className="link-holder">
-                            <a className="language" href="#">EN</a>
-                            <a className="language" href="#">ES</a>
+                            <a className="language" style={{cursor: "pointer"}} value="en" role="button" id="en" onClick={() => this.onLangChange('en')}>EN</a>
+                            <a className="language" style={{cursor: "pointer"}} value="es" role="button" id="es" onClick={() => this.onLangChange('es')}>ES</a>
                         </div>
                         <span className="button-area" style={{cursor: "pointer"}} onClick={() => this.openNav()}>&#43;</span>
                         <h3 className="colored-side-slogan">RRspark Stellar Web Studio</h3>
@@ -45,4 +68,7 @@ class Nav extends Component {
     }
 }
 
+
+
 export default Nav
+
