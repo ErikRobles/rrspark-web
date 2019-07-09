@@ -17,7 +17,6 @@ import Contenido from './pages/Contenido';
 
 class App extends Component {
   render() {
-    const { lang } = this.props;
     return (
       <Router basename="/"> 
         <div>

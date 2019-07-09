@@ -9,7 +9,7 @@ import es from '../lang/es';
 
 counterpart.registerTranslations('en', en);
 counterpart.registerTranslations('es', es);
-counterpart.setLocale('es');
+counterpart.setLocale('en');
 
 
 class Main extends Component {
@@ -69,9 +69,9 @@ class Main extends Component {
                                 <div className="social">
                                 <Translate content="contactLink" component="a" className="footer-contact-button" href="#/Contacto" />    
                             </div>
-                                <a href="#"><i className="fab fa-linkedin-in"></i></a>        
-                                <a href="#"><i className="fab fa-instagram"></i></a>
-                                <a href="#"><i className="fab fa-facebook-f extra-padding-right"></i></a>
+                                <a href="https://www.linkedin.com/feed/"><i className="fab fa-linkedin-in"></i></a>        
+                                <a href="https://www.instagram.com/?hl=en"><i className="fab fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/"><i className="fab fa-facebook-f extra-padding-right"></i></a>
                             </div>
                         </div>
                     </div>

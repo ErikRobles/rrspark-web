@@ -77,7 +77,7 @@ h3 {
     position: absolute;
     color: #fff;
     font-size: 16px;
-    top: 13px;
+    top: 15px;
     left: 15%;
     letter-spacing: 3px;
 }
@@ -132,8 +132,15 @@ h3 {
     transition: 0.3s;
 }
 
+.sidenav a .translateLower {
+    color: #341b39;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
 .big-cap {
       font-size: 26px;
+      color: #341b39;
 }
   
 .sidenav a:hover {
@@ -236,7 +243,8 @@ a.button-text-1:hover {
     background-color: #341b39;
     color: #fff!important;
 }
-.wrapper a.team-button {
+.wrapper a.team-button,
+.team {
     text-align: center;
     padding: 5px 0 5px 0;
     width: 160px;
@@ -423,6 +431,31 @@ a.footer-contact-button:hover {
     margin-top: 20px;
 }
 
+/* Scroll Bar styles*/
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 8px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #6f4179; 
+    border-radius: 8px;
+    border-right: 1px solid #cccacc;
+    border-left: 2px solid #cccacc;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(62, 19, 73, .5); 
+  }
+
 /* Media Queries */
 /* Main Area */
 @media only screen and (max-width: 850px) {
@@ -445,10 +478,24 @@ a.footer-contact-button:hover {
     }  
 }
 
+@media only screen and (max-width: 411px) {
+    .main-grid-container {
+        grid-template: 100%;
+        grid-template-rows: 75vh 35vh 35vh 25vh;
+        grid-template-areas: 
+            "main"
+            "top-right"
+            "bottom-right"
+            "last-box";
+            padding-left: 0px;
+            padding-top: 49px;
+    } 
+}
+
 @media only screen and (max-width: 376px) {
     .main-grid-container {
         grid-template: 100%;
-        grid-template-rows: 75vh 45vh 45vh 25vh;
+        grid-template-rows: 75vh 35vh 30vh 25vh;
         grid-template-areas: 
             "main"
             "top-right"
@@ -463,6 +510,20 @@ a.footer-contact-button:hover {
         margin-left: -125px!important;
         margin-top: -125px!important;
     }
+}
+
+@media only screen and (max-width: 320px) {
+    .main-grid-container {
+        grid-template: 100%;
+        grid-template-rows: 75vh 35vh 35vh 25vh;
+        grid-template-areas: 
+            "main"
+            "top-right"
+            "bottom-right"
+            "last-box";
+            padding-left: 0px;
+            padding-top: 49px;
+    } 
 }
 
 @media screen and (min-width: 1050px) {
@@ -534,6 +595,14 @@ a.footer-contact-button:hover {
 @media only screen and (max-width: 400px) {
     .colored-side-slogan {
         left: 17%;
+        letter-spacing: 1px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .colored-side-slogan {
+        font-size: 14px;
+        left: 23%;
         letter-spacing: 1px;
     }
 }
@@ -656,7 +725,7 @@ a.footer-contact-button:hover {
 
 @media only screen and (max-width: 375px) {
     .item-wrapper-2 {
-        padding-top: 60px;
+        padding-top: 30px;
     }
     .center-obj a.button-text-1 {
         font-size: 16px;
@@ -714,12 +783,19 @@ a.footer-contact-button:hover {
 
 @media only screen and (max-width: 411px) {
     .services-menu {
-        padding-top: 5px;
+        padding-top: 30px;
     }
 }
 @media only screen and (max-width: 375px) {
     .services-menu {
-        padding-top: 20px;
+        padding-top: 0;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .services-menu {
+        padding-top: 0;
+        padding-bottom: 20px;
     }
 }
 

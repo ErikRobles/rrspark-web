@@ -6,5 +6,20 @@ export default {
     sitioLink: 'Web Sites',
     EcommerceLink: 'E-Commerce',
     contenidoLink: 'Web Content',
-    contactLink: 'CONTACT'
+    contactLink: 'CONTACT',
+    UppercaseMenuHome: 'H',
+    lowercaseMenuHome: 'ome',
+    UppercaseMenuPortfolio: 'P',
+    lowercaseMenuPortfolio: 'ortfolio',
+    UppercaseMenuHow: 'H',
+    lowercaseMenuHow: 'ow',
+    UppercaseMenuWe: 'T',
+    lowercaseMenuWe: 'o',
+    UppercaseMenuWork: 'S',
+    lowercaseMenuWork: 'tart',
+    UppercaseMenuServices: 'S',
+    lowercaseMenuServices: 'ervices',
+    UppercaseMenuContact: 'C',
+    lowercaseMenuContact: 'ontact',
+    team: 'Our Team'
 }

@@ -6,5 +6,20 @@ export default {
     sitioLink: 'Sitio Web',
     EcommerceLink: 'E-Commerce',
     contenidoLink: 'Contenido Web',
-    contactLink: 'CONTACTO'
+    contactLink: 'CONTACTO',
+    UppercaseMenuHome: 'I',
+    lowercaseMenuHome: 'nicio',
+    UppercaseMenuPortfolio: 'P',
+    lowercaseMenuPortfolio: 'ortafolio',
+    UppercaseMenuHow: 'C',
+    lowercaseMenuHow: 'omo',
+    UppercaseMenuWe: '',
+    lowercaseMenuWe: '',
+    UppercaseMenuWork: 'C',
+    lowercaseMenuWork: 'omenzar',
+    UppercaseMenuServices: 'S',
+    lowercaseMenuServices: 'ervicios',
+    UppercaseMenuContact: 'C',
+    lowercaseMenuContact: 'ontacto',
+    team: 'Nuestro equipo base'
 }
